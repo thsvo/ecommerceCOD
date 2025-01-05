@@ -14,6 +14,8 @@ const nextConfig = {
       "facebook.com",
     ],
   },
+  
 };
+
 
 export default nextConfig;
