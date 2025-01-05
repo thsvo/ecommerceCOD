@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primaryColor: theme("colors.primary");
+    --primaryLightColor: theme("colors.primaryLight");
+    background-color: #f3f5f6;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor) !important;
+}
+
+.thumbnail::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.ant-btn-primary {
+  background-color: var(--primaryColor) !important;
+
+  &:hover {
+    background-color: "#fff" !important;
+    border: 1px solid var(--primaryColor) !important;
+  }
+}
+
+.ant-btn-default {
+  border: 1px solid var(--primaryColor) !important;
+}
+
+.ant-menu-item-selected {
+  color: var(--primaryColor) !important;
+}
+.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: var(--primaryColor) !important;
+  font-weight: 700 !important;
+}
+
+.ant-menu-submenu-active > .ant-menu-submenu-title {
+  color: #fff !important;
+}
+
+.ant-menu-item-selected {
+  color: #fff !important;
+}
+
+.ant-menu-item-active {
+  color: #fff !important;
+}
+
+.custom-menu .ant-menu-item::after {
+  border-bottom: none !important;
+}
+
+.ant-form-item-label {
+  font-weight: 700 !important;
+}
+
+.ant-drawer-header {
+  display: none !important;
+}
+.ant-table-content {
+  max-width: 1800px !important;
+  overflow-x: auto !important;
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+.swiper-button-next {
+  display: none !important;
+}
+
+.two-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-4;
+}
+.three-grid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-4;
+}
+.my-container {
+  @apply max-w-[1600px] mx-auto px-5;
+}

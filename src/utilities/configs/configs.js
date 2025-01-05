@@ -1,0 +1,2 @@
+export const payment_gateway_PK =
+  "pk_test_51NHIzCGWhXox4PLv9MeCKMeHKxfAXQmraus8KOJSgTsfnQCYRQzVA2bRElyShmCXIWkB4hcLJjpyxuhN9jpp67U600nQcUSKls";

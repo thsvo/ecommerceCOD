@@ -1,0 +1,9 @@
+.sidebar-toggle-button {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .sidebar-toggle-button {
+    display: block;
+  }
+}
